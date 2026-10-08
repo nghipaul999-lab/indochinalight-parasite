@@ -329,7 +329,17 @@ footer.ft{
 .dg .edge-gsa{ stroke:#b85450; stroke-width:2; fill:none; stroke-dasharray:6 4; stroke-linecap:round }
 .lg-gsa{ stroke:#b85450; stroke-width:2; stroke-dasharray:6 4 }
 .lg-gp{ stroke:#B45309; stroke-width:2.2 }
-.dg .dot-sk{ fill:#00A88E } .dg .dot-gsites{ fill:#7248B9 } .dg .dot-sqsp{ fill:#111111 }
+.dg a.vb-link{ cursor:pointer }
+.dg a.vb-link .vb-sn{ text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px }
+.dg a.vb-link:hover .vb-box{ stroke-width:2.6 }
+.dg a.vb-link:focus-visible .vb-box{ stroke-width:3 }
+.dg .vb-box--pbn{ fill:#FEF2EE; stroke:#7C2D12; stroke-width:1.8 }
+.dg .edge-pbn{ stroke:#7C2D12; stroke-width:2.2; fill:none; stroke-linecap:round }
+.lg-pbn{ stroke:#7C2D12; stroke-width:2.2 }
+.dg .vb-box--cmt{ fill:#F9FAFB; stroke:#6B7280; stroke-width:1.6; stroke-dasharray:2 4 }
+.dg .edge-cmt{ stroke:#6B7280; stroke-width:2; fill:none; stroke-dasharray:2 4; stroke-linecap:round }
+.lg-cmt{ stroke:#6B7280; stroke-width:2; stroke-dasharray:2 4 }
+.dg .dot-sk{ fill:#00A88E } .dg .dot-shopify{ fill:#5E8E3E } .dg .dot-gsites{ fill:#7248B9 } .dg .dot-sqsp{ fill:#111111 }
 </style>
 </head>
 <body>
@@ -342,7 +352,7 @@ footer.ft{
     <div class="canvas">
 <svg class="dg" viewBox="0 -52 1240 1010" role="img" aria-labelledby="il-title il-desc">
 <title id="il-title">Mô hình TAS — sơ đồ link stack hai tier cho Indochina Light</title>
-<desc id="il-desc">Tầng đích 4 collection của indochinalight.com và seed Wikipedia. Hệ phantom 5 tài sản: Tier 1 Cloudflare tool, GitHub Pages, Strikingly (site brand có sẵn); Tier 2 Google Sites, Squarespace. Mỗi tài sản ghi phantom keyword, DR nền tảng và traffic nền. Google Sites không trỏ money, chỉ nuôi Cloudflare và GitHub. Tầng đẩy: mỗi tài sản ẩn danh (Cloudflare, GitHub, Google Sites) nhận riêng một cụm Blog 2.0 và một cụm GSA; 2 tài sản brand không nhận Blog 2.0; Squarespace nhận social brand (Pinterest, YouTube) đẩy index + 1 guest post.</desc>
+<desc id="il-desc">Tầng đích 4 collection của indochinalight.com và seed Wikipedia. Hệ phantom 5 tài sản: Tier 1 Cloudflare tool, Shopify store, Strikingly (site brand có sẵn); Tier 2 Google Sites, Squarespace. Hai chuỗi tách riêng: ẩn danh (Google Sites → Cloudflare, Shopify; Cloudflare → Shopify) và brand (Squarespace → Strikingly). Tầng đẩy: Cloudflare nhận PBN web 2.0 homepage 25 link + Blog 2.0 50 link; Google Sites nhận Blog 2.0 100 link (2 gói) + guest post outreach; Shopify nhận guest post outreach; Squarespace nhận social brand (Pinterest, YouTube) + blog comment anchor brand / naked; Strikingly không nhận link đẩy. Không dùng GSA.</desc>
 <defs>
 <marker id="vb-ah-navy" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.4" markerHeight="5.4" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" class="vb-f-navy"/></marker>
 <marker id="vb-ah-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" class="vb-f-accent"/></marker>
@@ -350,10 +360,12 @@ footer.ft{
 <marker id="vb-ah-gp" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#B45309"/></marker>
 <marker id="vb-ah-social" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#C2410C"/></marker>
 <marker id="vb-ah-gsa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#b85450"/></marker>
+<marker id="vb-ah-pbn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#7C2D12"/></marker>
+<marker id="vb-ah-cmt" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#6B7280"/></marker>
 <marker id="vb-ah-seed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,1 L9,5 L0,9 Z" fill="#82b366"/></marker>
 </defs>
 <text class="method-tag" x="14" y="-24">MÔ HÌNH TAS</text>
-<text class="lb-sub" x="14" y="-6">5 tài sản phantom · 2 tier · tầng đẩy riêng cho 3 tài sản ẩn danh</text>
+<text class="lb-sub" x="14" y="-6">5 tài sản phantom · 2 tier · tầng đẩy riêng cho 3 tài sản ẩn danh + Squarespace</text>
 <rect class="vb-group" x="170" y="228" width="1062" height="432" rx="14"/>
 <line class="vb-div" x1="170" y1="200" x2="1232" y2="200"/>
 <line class="vb-div" x1="186" y1="445" x2="1216" y2="445"/>
@@ -364,7 +376,7 @@ footer.ft{
 <text class="lb-tier" x="16" y="314">TIER 1</text><text class="lb-sub" x="16" y="334">trỏ thẳng · 3</text>
 <text class="lb-tier" x="16" y="564">TIER 2</text><text class="lb-sub" x="16" y="584">nuôi tier 1 · 2</text>
 <text class="lb-tier" x="16" y="740">NGUỒN ĐẨY</text><text class="lb-sub" x="16" y="760">tier 2 · 4 box</text>
-<text class="lb-tier" x="16" y="846">NGUỒN ĐẨY</text><text class="lb-sub" x="16" y="866">tier 1 · 4 box</text>
+<text class="lb-tier" x="16" y="846">NGUỒN ĐẨY</text><text class="lb-sub" x="16" y="866">tier 1 · 3 box</text>
 <path class="edge-back" d="M300,250 C300,190 420,204 420,144" marker-end="url(#vb-ah-navy)"/>
 <path class="edge-back" d="M420,250 C420,190 610,204 610,144" marker-end="url(#vb-ah-navy)"/>
 <path class="edge-back" d="M740,250 C740,190 850,204 850,144" marker-end="url(#vb-ah-navy)"/>
@@ -373,19 +385,16 @@ footer.ft{
 <path class="edge-back" d="M960,250 C960,190 520,204 520,144" marker-end="url(#vb-ah-navy)"/>
 <path class="edge-back" d="M885,500 L885,212 C885,178 930,186 930,144" marker-end="url(#vb-ah-navy)"/>
 <path class="edge-chain" d="M480,320.0 L550,320.0" marker-end="url(#vb-ah-accent)"/>
-<path class="edge-chain" d="M920,320.0 L850,320.0" marker-end="url(#vb-ah-accent)"/>
 <path class="edge-chain" d="M430,500 C430,450 400,440 400,390" marker-end="url(#vb-ah-accent)"/>
 <path class="edge-chain" d="M600,500 C600,450 620,440 620,390" marker-end="url(#vb-ah-accent)"/>
-<path class="edge-chain" d="M790,500 C790,450 760,440 760,390" marker-end="url(#vb-ah-accent)"/>
 <path class="edge-chain" d="M960,500 C960,450 1000,440 1000,390" marker-end="url(#vb-ah-accent)"/>
 <path class="edge-int" d="M455,712 V640" marker-end="url(#vb-ah-muted)"/>
-<path class="edge-gsa" d="M605,712 V640" marker-end="url(#vb-ah-gsa)"/>
+<path class="edge-gp" d="M605,712 V640" marker-end="url(#vb-ah-gp)"/>
 <path class="edge-social" d="M830,712 V640" marker-end="url(#vb-ah-social)"/>
-<path class="edge-gp" d="M980,712 V640" marker-end="url(#vb-ah-gp)"/>
-<path class="edge-int" d="M250,818 V390" marker-end="url(#vb-ah-muted)"/>
-<path class="edge-gsa" d="M400,818 V800 Q400,792 392,792 H348 Q340,792 340,784 V390" marker-end="url(#vb-ah-gsa)"/>
-<path class="edge-int" d="M685,818 V390" marker-end="url(#vb-ah-muted)"/>
-<path class="edge-gsa" d="M835,818 V800 Q835,792 827,792 H723 Q715,792 715,784 V390" marker-end="url(#vb-ah-gsa)"/>
+<path class="edge-cmt" d="M980,712 V640" marker-end="url(#vb-ah-cmt)"/>
+<path class="edge-pbn" d="M250,818 V390" marker-end="url(#vb-ah-pbn)"/>
+<path class="edge-int" d="M400,818 V800 Q400,792 392,792 H348 Q340,792 340,784 V390" marker-end="url(#vb-ah-muted)"/>
+<path class="edge-gp" d="M685,818 V390" marker-end="url(#vb-ah-gp)"/>
 <path class="edge-seed" d="M330,92 L345,92" marker-end="url(#vb-ah-seed)"/>
 <g><rect class="vb-box vb-box--seed" x="180" y="40" width="150" height="104" rx="10"/><circle class="dot-wiki" cx="198" cy="66" r="5.5"/><text class="vb-mname" x="210" y="71">Wikipedia</text><text class="vb-mmeta" x="192" y="96">bài “LED lamp” · seed</text><text class="vb-mmeta" x="192" y="112">nofollow · có sẵn</text><text class="vb-mmeta" x="192" y="128">giữ nguyên</text></g>
 <g><rect class="vb-box vb-box--money" x="345" y="40" width="210" height="104" rx="10"/>
@@ -412,18 +421,18 @@ footer.ft{
 </g>
 <g><rect class="vb-box" x="180" y="250" width="300" height="140" rx="10"/>
 <circle class="dot-cloudflare" cx="202" cy="279" r="5.5"/><text class="vb-name" x="216" y="284">Cloudflare</text>
-<text class="vb-url" x="196" y="306">kitchen-island-calculator.pages.dev</text>
-<text class="vb-pk" x="196" y="330">PK: kitchen island pendant light size</text>
+<text class="vb-url" x="196" y="306">room-lighting-calculator.pages.dev</text>
+<text class="vb-pk" x="196" y="330">PK: room lighting calculator</text>
 <text class="vb-foot" x="196" y="376">traffic nền 3,5 tr · dofollow ✓ · PSL</text>
 <rect class="dr-badge" x="392" y="362" width="76" height="20" rx="10"/><text class="dr-tx" x="430" y="376" text-anchor="middle">DR nền 93</text>
 <rect class="vb-badge" x="366" y="263" width="102" height="20" rx="10"/><text class="vb-badge-tx" x="417.0" y="277" text-anchor="middle">ẩn danh · tool</text>
 </g>
 <g><rect class="vb-box" x="550" y="250" width="300" height="140" rx="10"/>
-<circle class="dot-github" cx="572" cy="279" r="5.5"/><text class="vb-name" x="586" y="284">GitHub Pages</text>
-<text class="vb-url" x="566" y="306">rattan-light-care.github.io</text>
+<circle class="dot-shopify" cx="572" cy="279" r="5.5"/><text class="vb-name" x="586" y="284">Shopify</text>
+<text class="vb-url" x="566" y="306">rattan-light-care.myshopify.com · blog</text>
 <text class="vb-pk" x="566" y="330">PK: rattan lamp shade turning yellow</text>
-<text class="vb-foot" x="566" y="376">traffic nền 9 tr · dofollow ✓ · PSL</text>
-<rect class="dr-badge" x="762" y="362" width="76" height="20" rx="10"/><text class="dr-tx" x="800" y="376" text-anchor="middle">DR nền 94</text>
+<text class="vb-foot" x="566" y="376">nền 912K · dofollow ✓ · PSL · trả phí</text>
+<rect class="dr-badge" x="762" y="362" width="76" height="20" rx="10"/><text class="dr-tx" x="800" y="376" text-anchor="middle">DR nền 95</text>
 <rect class="vb-badge" x="736" y="263" width="102" height="20" rx="10"/><text class="vb-badge-tx" x="787.0" y="277" text-anchor="middle">ẩn danh</text>
 </g>
 <g><rect class="vb-box vb-box--amber" x="920" y="250" width="300" height="140" rx="10"/>
@@ -452,18 +461,29 @@ footer.ft{
 <rect class="dr-badge" x="947" y="612" width="76" height="20" rx="10"/><text class="dr-tx" x="985" y="626" text-anchor="middle">DR nền 96</text>
 <rect class="vb-badge" x="931" y="513" width="92" height="20" rx="10"/><text class="vb-badge-tx" x="977.0" y="527" text-anchor="middle">IndochinaLight</text>
 </g>
-<g><rect class="vb-box vb-box--src" x="385" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="397" y="735">Blog 2.0</text><text class="vb-cnt" x="513" y="735" text-anchor="end">100 link</text><text class="vb-ss" x="397" y="754">đẩy Google Sites</text></g>
-<g><rect class="vb-box vb-box--gsa" x="535" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="547" y="735">GSA</text><text class="vb-cnt" x="663" y="735" text-anchor="end">⏳ link</text><text class="vb-ss" x="547" y="754">đẩy Google Sites</text></g>
+<a href="https://legiit.com/SumiSEO/get-your-rank-in-google-with-web20-contextua-link" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://legiit.com/SumiSEO/get-your-rank-in-google-with-web20-contextua-link</title>
+<g><rect class="vb-box vb-box--src" x="385" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="397" y="735">Blog 2.0</text><text class="vb-cnt" x="513" y="735" text-anchor="end">100 link</text><text class="vb-ss" x="397" y="754">2 gói · contextual</text></g>
+</a>
+<a href="https://www.blackhatworld.com/seo/9-guest-post-rank-fast-dominate-ai-visibility-chatgpt-google-sge-niche-relevant-da-dr-up-to-90-real-traffic-up-to-990k-zero-pbn.1813074/" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://www.blackhatworld.com/seo/9-guest-post-rank-fast-dominate-ai-visibility-chatgpt-google-sge-niche-relevant-da-dr-up-to-90-real-traffic-up-to-990k-zero-pbn.1813074/</title>
+<g><rect class="vb-box vb-box--gp" x="535" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="547" y="735">Guest post</text><text class="vb-cnt" x="663" y="735" text-anchor="end">⏳ link</text><text class="vb-ss" x="547" y="754">outreach</text></g>
+</a>
 <g><rect class="vb-box vb-box--social" x="760" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="772" y="735">Social brand</text><text class="vb-ss" x="772" y="754">Pinterest · YouTube</text></g>
-<g><rect class="vb-box vb-box--gp" x="910" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="922" y="735">Guest post</text><text class="vb-cnt" x="1038" y="735" text-anchor="end">1 link</text><text class="vb-ss" x="922" y="754">blog decor US</text></g>
-<g><rect class="vb-box vb-box--src" x="180" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="192" y="841">Blog 2.0</text><text class="vb-cnt" x="308" y="841" text-anchor="end">100 link</text><text class="vb-ss" x="192" y="860">đẩy Cloudflare</text></g>
-<g><rect class="vb-box vb-box--gsa" x="330" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="342" y="841">GSA</text><text class="vb-cnt" x="458" y="841" text-anchor="end">⏳ link</text><text class="vb-ss" x="342" y="860">đẩy Cloudflare</text></g>
-<g><rect class="vb-box vb-box--src" x="615" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="627" y="841">Blog 2.0</text><text class="vb-cnt" x="743" y="841" text-anchor="end">100 link</text><text class="vb-ss" x="627" y="860">đẩy GitHub</text></g>
-<g><rect class="vb-box vb-box--gsa" x="765" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="777" y="841">GSA</text><text class="vb-cnt" x="893" y="841" text-anchor="end">⏳ link</text><text class="vb-ss" x="777" y="860">đẩy GitHub</text></g>
+<a href="https://legiit.com/bravvo/niche-relevant-blog-comments" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://legiit.com/bravvo/niche-relevant-blog-comments</title>
+<g><rect class="vb-box vb-box--cmt" x="910" y="712" width="140" height="56" rx="10"/><text class="vb-sn" x="922" y="735">Comment</text><text class="vb-cnt" x="1038" y="735" text-anchor="end">⏳ link</text><text class="vb-ss" x="922" y="754">blog · brand / naked</text></g>
+</a>
+<a href="https://legiit.com/inzam_shahib/25-high-trustflow-homepage-web2-pbn-dofollow-backlinks-1640511241" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://legiit.com/inzam_shahib/25-high-trustflow-homepage-web2-pbn-dofollow-backlinks-1640511241</title>
+<g><rect class="vb-box vb-box--pbn" x="180" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="192" y="841">PBN</text><text class="vb-cnt" x="308" y="841" text-anchor="end">25 link</text><text class="vb-ss" x="192" y="860">web 2.0 homepage</text></g>
+</a>
+<a href="https://legiit.com/SumiSEO/get-your-rank-in-google-with-web20-contextua-link" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://legiit.com/SumiSEO/get-your-rank-in-google-with-web20-contextua-link</title>
+<g><rect class="vb-box vb-box--src" x="330" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="342" y="841">Blog 2.0</text><text class="vb-cnt" x="458" y="841" text-anchor="end">50 link</text><text class="vb-ss" x="342" y="860">vào bài cluster</text></g>
+</a>
+<a href="https://www.blackhatworld.com/seo/9-guest-post-rank-fast-dominate-ai-visibility-chatgpt-google-sge-niche-relevant-da-dr-up-to-90-real-traffic-up-to-990k-zero-pbn.1813074/" target="_blank" rel="nofollow noopener" class="vb-link"><title>Mở trang gói: https://www.blackhatworld.com/seo/9-guest-post-rank-fast-dominate-ai-visibility-chatgpt-google-sge-niche-relevant-da-dr-up-to-90-real-traffic-up-to-990k-zero-pbn.1813074/</title>
+<g><rect class="vb-box vb-box--gp" x="615" y="818" width="140" height="56" rx="10"/><text class="vb-sn" x="627" y="841">Guest post</text><text class="vb-cnt" x="743" y="841" text-anchor="end">⏳ link</text><text class="vb-ss" x="627" y="860">outreach · DR ≤ 90</text></g>
+</a>
 </svg>
     </div>
     <p class="scroll-hint">↔ Cuộn ngang để xem hết sơ đồ.</p>
-    <ul class="legend"><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-back" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#002E5A"/></svg><span><b>Link về money site</b> — 7 link, trỏ thẳng vào indochinalight.com · mỗi tài sản ≤ 2 link money</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-chain" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#0077A8"/></svg><span><b>Link stack</b> — 6 link, phantom nuôi phantom (chuỗi Tier 1 hội tụ về GitHub)</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-int" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#5A6B7B"/></svg><span><b>Nguồn đẩy Blog 2.0</b> — 100 link vào mỗi tài sản ẩn danh, tổng 300 link</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-gsa" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#b85450"/></svg><span><b>GSA</b> — 1 cụm vào mỗi tài sản ẩn danh (Cloudflare, GitHub, Google Sites) · số link chưa chốt (⏳)</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-gp" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#B45309"/></svg><span><b>Guest post / niche edit</b> — 1 link vào Squarespace · blog home-decor US, DR 30–50, có traffic</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-social" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#C2410C"/></svg><span><b>Social brand</b> — Pinterest + YouTube của IndochinaLight → Squarespace, đẩy index</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-seed" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#82b366"/></svg><span><b>Seed có sẵn</b> — Wikipedia → pillar, nofollow</span></li></ul>
+    <ul class="legend"><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-back" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#002E5A"/></svg><span><b>Link về money site</b> — 7 link, trỏ thẳng vào indochinalight.com · mỗi tài sản ≤ 2 link money</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-chain" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#0077A8"/></svg><span><b>Link stack</b> — 4 link, 2 chuỗi tách riêng: ẩn danh (Google Sites → Cloudflare, Shopify · Cloudflare → Shopify) và brand (Squarespace → Strikingly) · không link qua lại giữa tài sản brand và ẩn danh</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-pbn" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#7C2D12"/></svg><span><b>PBN web 2.0 homepage</b> — 25 link vào Cloudflare (1 gói Legiit, TF/CF trung bình ~15, bài spin) · bắn vào bài cluster, không vào trang tool</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-int" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#5A6B7B"/></svg><span><b>Blog 2.0</b> — 50 link vào Cloudflare + 100 link vào Google Sites (2 gói × 50, web 2.0 contextual, 60% dofollow) · tổng 150 link</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-gp" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#B45309"/></svg><span><b>Guest post outreach</b> — vào Google Sites và Shopify · số link chưa chốt (⏳)</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-cmt" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#6B7280"/></svg><span><b>Blog comment</b> — vào Squarespace (1 gói Legiit, follow + nofollow lẫn) · anchor brand / naked</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-social" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#C2410C"/></svg><span><b>Social brand</b> — Pinterest + YouTube của IndochinaLight → Squarespace, đẩy index</span></li><li><svg width="46" height="14" aria-hidden="true" focusable="false"><line class="lg-seed" x1="1" y1="7" x2="37" y2="7"/><path d="M37,2.5 L45,7 L37,11.5 Z" fill="#82b366"/></svg><span><b>Seed có sẵn</b> — Wikipedia → pillar, nofollow</span></li></ul>
   </section>
   <section class="sec" id="so-do-08-method">
     <h2>2. Mô hình 08 method → wabi-sabi</h2>
